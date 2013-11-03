@@ -1,5 +1,4 @@
 require './lib/matrices.rb'
-#require './lib/matrices.dat'
 require 'rspec'
 
 describe Matriz do
@@ -13,15 +12,15 @@ describe Matriz do
 
     describe "Visualización de la matriz" do
       it "- La matriz se visualiza correctamente" do
-        @Matriz1.to_s.should eq("[[1, 2], [3, 4]]")
+        @Matriz1.imp.should eq("[[1, 2], [3, 4]]")
       end
       it "- La matriz tiene la estructura correcta" do
         temp = [[1,2],[3,4]]
-        @Matriz1.should eq(temp)
+        @Matriz1.imp.should eq(temp.inspect)
       end
       it "- La matriz se genera correctamente" do
         temp = Matriz.new("1 2\n3 4")
-        @Matriz1.should eq(temp)
+        @Matriz1.imp.should eq(temp.imp)
       end
     end
 end

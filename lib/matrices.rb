@@ -1,8 +1,3 @@
-
-
-
-
-
 class Matriz
   
   def mapmap(a)
@@ -11,6 +6,10 @@ class Matriz
         yield e
       }
     }
+  end
+  
+  def imp
+    @matriz.inspect
   end
   
   def to_m (a)
@@ -26,5 +25,3 @@ end
 
 
 m1 = Matriz.new("1 2\n3 4")
-puts m1
-
