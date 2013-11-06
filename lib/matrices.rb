@@ -22,6 +22,3 @@ class Matriz
     @matriz = to_m(a)
   end
 end
-
-
-m1 = Matriz.new("1 2\n3 4")

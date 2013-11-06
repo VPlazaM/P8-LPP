@@ -23,16 +23,4 @@ describe Matriz do
         @Matriz1.imp.should eq(temp.imp)
       end
     end
-    
-    describe "Operaciones con matrices" do
-      it "- La suma matricial se realiza correctamente" do
-	temp = [[3,5],[7,9]]
-        (@Matriz1 + @Matriz2).imp.should eq(temp.inspect)
-      end
-      
-       it "- La suma matricial se realiza correctamente" do
-	temp = [[1,1],[1,1]]
-        (@Matriz2 + @Matriz1).imp.should eq(temp.inspect)
-      end
-    end
 end
